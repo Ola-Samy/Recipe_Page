@@ -1,0 +1,122 @@
+
+/* General Styles */
+.container {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+    color: #4a4a4a;
+  }
+  
+  /* Recipe Card */
+  .recipe-card {
+    max-width: 750px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.432);
+    overflow: hidden;
+  }
+
+  .recipe-image{
+    position: relative;
+  }
+  
+  .recipe-image img {
+    width: 100%;
+    display: block;
+   max-height: 250px;
+  }
+  
+  .recipe-title {
+    position: absolute;
+    bottom: 70%;
+    right: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px;
+    background: rgba(175, 157, 134, 0.707);
+    font-size: 2rem;
+    color: rgb(126, 14, 14);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.432);
+    max-width: 90%;
+  }
+  
+ .recipe-info {
+    text-align: center;
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-top: 8px;
+  }
+  
+  .recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .ingredients, .directions {
+    flex: 1;
+    min-width: 300px;
+    margin: 16px;
+  }
+  
+  .ingredients h2, .directions h2 {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-bottom: 12px;
+  }
+  
+  .ingredients ul, .directions ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .recipe-tips {
+    background: #f7f3ee;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .recipe-tips h3 {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-bottom: 8px;
+  }
+  @media (min-width: 600px) {
+    .recipe-card {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .recipe-title {
+      font-size: 1.2rem; 
+      padding: 8px; 
+      bottom: 60%;
+      right: 30%; 
+      max-width: 80%; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width:1024px) {
+    .recipe-title{
+        font-size: 1.8rem;
+        padding: 15px;
+        bottom: 83%;
+        right: 20%;
+        transform: translateX(-50%);
+        max-width: 85%;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 768px) {
+    .recipe-title {
+      font-size: 1.2rem; 
+      padding: 8px; 
+      bottom: 60%;
+      right: 30%; 
+      max-width: 80%; 
+    }
+  }
